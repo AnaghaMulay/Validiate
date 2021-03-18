@@ -10,7 +10,7 @@ h2{
   border-radius: 8px;
   font-family: "Lucida Console", "Courier New", monospace;
   background-color: white;
-  border: 2px solid #1886ea;
+  border: 2px solid #2f66ff;
   color: gray;
   padding: 15px 32px;
   text-align: center;
@@ -25,7 +25,7 @@ h2{
   border-radius: 8px;
   font-family: "Lucida Console", "Courier New", monospace;
   background-color: white;
-  border: 2px solid #1886ea;
+  border: 2px solid #2f66ff;
   color: gray;
   padding: 15px 32px;
   text-align: center;
@@ -40,8 +40,8 @@ h2{
   width : 10%;
   border-radius: 8px;
   font-family: "Lucida Console", "Courier New", monospace;
-  background-color: #1886ea;
-  border: 2px solid #1886ea;
+  background-color: #2f66ff;
+  border: 2px solid #2f66ff;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -88,5 +88,58 @@ input[type=text] {
   font-size: 15px;
   border: none;
   font-family: "Lucida Console", "Courier New", monospace;
+  
 }
 
+
+
+
+
+
+
+
+
+.box {
+	background-color: #ffffff;
+  width: 600px;
+  
+  border: 1px solid gray;
+  padding: 28px;
+  margin: 15px;
+  float:right;
+}
+
+.box1 {
+	background-color: #ffffff;
+  width: 600px;
+  
+  border: 1px solid gray;
+  padding: 28px;
+  margin: 15px;
+  float:left;
+}
+
+
+
+
+
+
+
+
+
+
+.submit {
+  width : 50%;
+  border-radius: 8px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #2f66ff;
+  border: 2px solid #2f66ff;
+  color: white;
+  padding: 5px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 4px;
+  cursor: pointer;
+}
