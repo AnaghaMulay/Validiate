@@ -1,5 +1,5 @@
 a {
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
 }
 h2{
 	text-align: center;
@@ -8,10 +8,10 @@ h2{
 .button {
   width : 16%;
   border-radius: 8px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
   background-color: white;
   border: 2px solid #2f66ff;
-  color: gray;
+  color: #707070;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -23,10 +23,10 @@ h2{
 .button2 {
   width : 12%;
   border-radius: 8px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
   background-color: white;
   border: 2px solid #2f66ff;
-  color: gray;
+  color: #707070;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -39,7 +39,7 @@ h2{
 .ask_now {
   width : 10%;
   border-radius: 8px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
   background-color: #2f66ff;
   border: 2px solid #2f66ff;
   color: white;
@@ -51,6 +51,29 @@ h2{
   margin: 6px 4px;
   cursor: pointer;
 }
+
+
+.bkg{
+	background-image:linear-gradient(150deg,#ee696b 0%, #523a78 50%);
+}
+
+
+
+body{
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)),url('doodles.png');
+    background-size: 30%;
+    background-repeat:repeat;
+    transition: 2s ease all;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+
+
+
+
 
 
 
@@ -69,7 +92,7 @@ h2{
   font-size: 15px;
   border: none;
   cursor: pointer;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
 }
 
 input[type=text] {
@@ -79,7 +102,7 @@ input[type=text] {
 
 .search-container {
   float: right;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
 }
 
 input[type=text] {
@@ -87,7 +110,7 @@ input[type=text] {
   margin-top: 8px;
   font-size: 15px;
   border: none;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
   
 }
 
@@ -103,7 +126,7 @@ input[type=text] {
 	background-color: #ffffff;
   width: 600px;
   
-  border: 1px solid gray;
+  border: 1px solid #707070;
   padding: 28px;
   margin: 15px;
   float:right;
@@ -113,7 +136,7 @@ input[type=text] {
 	background-color: #ffffff;
   width: 600px;
   
-  border: 1px solid gray;
+  border: 1px solid #707070;
   padding: 28px;
   margin: 15px;
   float:left;
@@ -127,11 +150,37 @@ input[type=text] {
 
 
 
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+
+
+#nav {
+	text-align:center;
+	display: inline-block;ss
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .submit {
   width : 50%;
   border-radius: 8px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Segoe UI", "Courier New", monospace;
   background-color: #2f66ff;
   border: 2px solid #2f66ff;
   color: white;
@@ -142,4 +191,28 @@ input[type=text] {
   font-size: 16px;
   margin: 6px 4px;
   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading {
+	float: right;
+	font-size = 280 px;
+	
 }
