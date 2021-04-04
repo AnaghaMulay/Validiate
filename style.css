@@ -1,3 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include bkg-img-transition("doodles.png","doodles.png");
+
+
+
+
+
+
+
+
+
+
+
 a {
   font-family: "Segoe UI", "Courier New", monospace;
 }
@@ -9,24 +34,31 @@ h2{
   width : 16%;
   border-radius: 8px;
   font-family: "Segoe UI", "Courier New", monospace;
-  background-color: white;
-  border: 2px solid #2f66ff;
-  color: #707070;
+  background-image:linear-gradient(150deg,#20bf55 0%, #01baef 50%);
+  border:0.005px solid gray;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 6px 4px;
+  margin: 6px 6px;
   cursor: pointer;
 }
+
+
+button:hover{
+	color:#707070;
+	background-image:linear-gradient(150deg,#80ff72 0%, #7ee8fa 50%);}
+
+
 .button2 {
   width : 12%;
   border-radius: 8px;
   font-family: "Segoe UI", "Courier New", monospace;
-  background-color: white;
-  border: 2px solid #2f66ff;
-  color: #707070;
+  background-image:linear-gradient(150deg,#20bf55 0%, #01baef 50%);
+  border:0.005px solid gray;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -40,8 +72,9 @@ h2{
   width : 10%;
   border-radius: 8px;
   font-family: "Segoe UI", "Courier New", monospace;
-  background-color: #2f66ff;
-  border: 2px solid #2f66ff;
+  /*background-color: #2f66ff;
+  border: 2px  white;*/
+  background-image:linear-gradient(150deg,#20bf55 0%, #01baef 50%);
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -54,7 +87,7 @@ h2{
 
 
 .bkg{
-	background-image:linear-gradient(150deg,#ee696b 0%, #523a78 50%);
+	background-image:linear-gradient(150deg,#fcd181 0%, #e79087 50%);
 }
 
 
