@@ -16,37 +16,113 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Trends</a></li>
-      <li><a href="#">Users</a></li>
-      <li><a href="#">Login</a></li>
-	  <li><a></a></li> <li><a></a></li> <li><a></a><li><a></a><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li>
-	  <li><a></a></li><li><a></a></li><li><a></a></li>
-	  <li class = "search-container" style="float: right;">
-		<input type="text" placeholder="Search.." name="search">
-        <button type="submit">Submit</button>
-	  </li>
-	 
-	  <a class="navbar-nav ml-auto" href="index.html"><H2 style="font-size: 30px; font-weight: bold; color: #707070">Validiate</H2></a><li><a></a></li>     <li><a></a></li>     
-	  <li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li>
-	  <li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li>
-	
-	
-    </ul>
-	
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  
+  <a></a><a><a></a><a></a><a><a></a><a></a><a></a></a></a><a></a><a></a><a></a><a></a><a></a><a></a><a style="font-weight:bold; color: #707070; font-size:25px ">Validiate</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
   </div>
-  </div>
-</nav>
+</div>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  <div id="id01" class="modal">
+
+		<form class="modal-content animate" action="http://localhost:8080/validiate/ind.php" method = "POST">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+				<img src=
+"ideate.gif" alt="Avatar" class="avatar">
+				<h1>Validiate</h1>
+			</div>
+
+			<div class="container">
+				<label><b>Email Id</b></label>
+				</br>
+				<input type="text" placeholder="Enter Email_Id" name="email" required>
+				</br>
+				<label><b>Password</b></label>
+				</br>
+				<input type="password" placeholder="Enter Password" name="pass" required>
+
+				<button type="submit" class="bl">Login</button></br>
+				<input type="checkbox" checked="checked"> Remember me
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+				
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+	</div>
+
+	<script>
+		var modal = document.getElementById('id01');
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 <div class="container">
 		<p style="font-family: Segoe UI; text-align: center; font-size:19px;font-weight: bold; color:#707070";>Ideate. Validate. Create</p>
 </div>
+
+
+
+
+
+
+
+
+
+
 
 </BR></BR>
 
@@ -107,20 +183,25 @@
 
 
 <div class="box" style = "width:15%;  border-radius: 8px;">
-  <form action="/action_page.php" >
-    <label style="font-family: Segoe UI; float:center">Username</label>
-    <input type="email" style="width:75%; font-family: Segoe UI;" class="form-control" name="lastname" placeholder="Username">
+  <form action="http://localhost:8080/validiate/register.php" method = "POST">
+    <label style="font-family: Segoe UI; float:left">Username</label>
+    <input type="text" placeholder="Member Name" name="mem" required>
     </br>
-    <label style="font-family: Segoe UI;" for="lname">Email Id</label>
-    <input type="email" style="width:75%; font-family: Segoe UI;" class="form-control" name="lastname" placeholder="Email">
+    <label style="font-family: Segoe UI;">Email Id</label>
+    <input type=text pattern="*.@.*" placeholder="Email_Id" name="email" required>
+    </br>
+	<label style="font-family: Segoe UI; float:left">Mobile_no</label>
+    <input type="text" placeholder="Mobile_no" name="mob_no" required>
     </br>
 	<label style="font-family: Segoe UI;">Password</label>
-    <input type="Password" style="width:75%; font-family: Segoe UI;" class="form-control" name="firstname" placeholder="Password">
+    <input type="password" placeholder="Password" name="pass" required>
 	</br>
-    
-    
-  
     <input class="submit" type="submit" value="Submit">
+	
+    <label onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</label>
+   
+    
+	
   </form>
 </div>
 
@@ -132,13 +213,18 @@
 <p class="hd">Is bitcoin the next wave</p>
 <p> Like share subscribe</p>
 </br>
-<i onclick="myFunction(this)" class="fa fa-thumbs-o-up" style="font-size:30px" ></i>
+<div class="row">
+  <div class="column">
+    <img src="Agree.gif" ><p>Agree</p>
+  </div>
+  <div class="column">
+    <img src="durbin.png"  ><p>View All</p>
+  </div>
+  <div class="column">
+    <img src="discuss.gif" ><p>Discuss</p>
+  </div>
+</div>
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("fa-thumbs-o-down");
-}
-</script>
 
 </div>
 <p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
